@@ -1,0 +1,30 @@
+.gallery {
+    display: flex;
+    gap: 1rem;
+}
+.gallery>div {
+    flex: 1; overflow: hidden;
+    border-radius: 1rem; 
+}
+
+img {
+    width: 100%;
+    transition: all .5s;
+}
+
+img:hover {
+    transform: scale(1.4)
+    rotate(10deg); 
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+    }
+
+}
+p {
+    justify-content: center;
+    text-align: center;
+    background-color: aqua;
+}
